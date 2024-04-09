@@ -30,11 +30,17 @@ const insertIntoMiddle = (arr, value) => {
   arr.splice(insertLocation, 0, value)
   return arr
 };
-console.log(insertIntoMiddle([1, 2, 3, 4, 5], 6))
+// console.log(insertIntoMiddle([1, 2, 3, 4, 5], 6))
 
 
-const deleteFromMiddle = () => {
+const deleteFromMiddle = (arr) => {
+  arr.splice(Math.floor(arr.length / 2), 1)
+  return arr
 };
+console.log(deleteFromMiddle(['a', 'b', 'c', 'd']));
+console.log(deleteFromMiddle([1, 2, 3, 4, 5]));
+console.log(deleteFromMiddle([1, 2, 3]));
+console.log(deleteFromMiddle([]));
 
 const isRightIndex = () => {
 };
