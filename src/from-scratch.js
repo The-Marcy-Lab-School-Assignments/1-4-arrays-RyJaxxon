@@ -23,10 +23,15 @@ const newArrayFullOf = (value, numOfValue) => {
   arr.fill(value, 0, numOfValue);
   return arr;
 };
-console.log(newArrayFullOf(6, 6));
+// console.log(newArrayFullOf(6, 6));
 
-const insertIntoMiddle = () => {
+const insertIntoMiddle = (arr, value) => {
+  insertLocation = Math.floor(arr.length / 2)
+  arr.splice(insertLocation, 0, value)
+  return arr
 };
+console.log(insertIntoMiddle([1, 2, 3, 4, 5], 6))
+
 
 const deleteFromMiddle = () => {
 };
