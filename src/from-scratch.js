@@ -16,16 +16,14 @@ const reverseString = (str) => {
   }
   return arr.reverse().join("");
 };
-console.log(reverseString("Hello!"))
+// console.log(reverseString("Hello!"))
 
-// const newArrayFullOf = (value, numOfValue) => {
-//   let arr = []
-//   for (let i = 1; i <= numOfValue; i++) {
-//     arr.push(value)
-//   }
-//   return arr
-// };
-// console.log(newArrayFullOf(1, 5));
+const newArrayFullOf = (value, numOfValue) => {
+  const arr = Array(numOfValue);
+  arr.fill(value, 0, numOfValue);
+  return arr;
+};
+console.log(newArrayFullOf(6, 6));
 
 const insertIntoMiddle = () => {
 };
@@ -45,7 +43,7 @@ const getAllYCoordinates = () => {
 module.exports = {
   addToFrontOrBack,
   reverseString,
-  // newArrayFullOf,
+  newArrayFullOf,
   insertIntoMiddle,
   deleteFromMiddle,
   isRightIndex,
