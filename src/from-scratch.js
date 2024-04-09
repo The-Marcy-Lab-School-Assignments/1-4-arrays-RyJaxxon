@@ -37,15 +37,22 @@ const deleteFromMiddle = (arr) => {
   arr.splice(Math.floor(arr.length / 2), 1)
   return arr
 };
-console.log(deleteFromMiddle(['a', 'b', 'c', 'd']));
-console.log(deleteFromMiddle([1, 2, 3, 4, 5]));
-console.log(deleteFromMiddle([1, 2, 3]));
-console.log(deleteFromMiddle([]));
+// console.log(deleteFromMiddle(['a', 'b', 'c', 'd']));
+// console.log(deleteFromMiddle([1, 2, 3, 4, 5]));
+// console.log(deleteFromMiddle([1, 2, 3]));
+// console.log(deleteFromMiddle([]));
 
-const isRightIndex = () => {
+const isRightIndex = (arr, value, index) => {
+  if (value === arr[index]) {
+    return true
+  } else {
+    return false
+  };
 };
+// console.log(isRightIndex([`a`, `b`, `c`, `d`, `e`], 'a', 0));
 
 const roundAllNumsDown = () => {
+
 };
 
 const getAllYCoordinates = () => {
