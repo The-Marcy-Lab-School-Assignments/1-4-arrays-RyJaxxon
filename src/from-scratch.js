@@ -60,8 +60,14 @@ const roundAllNumsDown = (arr) => {
 };
 // console.log(roundAllNumsDown([1.1, 2.2, 3.3]));
 
-const getAllYCoordinates = () => {
+const getAllYCoordinates = (arr) => {
+  let newArr = []
+  for (const index of arr) {
+    newArr.push(index[1]);
+  };
+  return newArr
 };
+console.log(getAllYCoordinates([[1, 2], [3, 4], [5, 6]]));
 
 module.exports = {
   addToFrontOrBack,
