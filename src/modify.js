@@ -1,3 +1,4 @@
+/** FEEDBACK: Great job using map! */
 const uppercaseAll = (...words) => {
   return words.map(word => word.toUpperCase())
 };
